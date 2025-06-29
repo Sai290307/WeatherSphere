@@ -239,6 +239,7 @@ addhourlyinfo.appendChild(newhourlyelement);
 
 } catch (error) {
   console.error("Error updating info:", error);
+  alert("Please enter a valid city name."); 
  
 }
 const setsearchInput = document.getElementById("searchBox").value = "";
