@@ -241,6 +241,7 @@ addhourlyinfo.appendChild(newhourlyelement);
   console.error("Error updating info:", error);
  
 }
+const setsearchInput = document.getElementById("searchBox").value = "";
 }
 
 async function updateInfoWithCurrentLocation() {
