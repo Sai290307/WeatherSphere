@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherSphere | Professional Weather Forecasting</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-cloud-sun"></i>
+                <h1>WeatherSphere</h1>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search location..." class="search-input" id = "searchBox" autocomplete="off">
+                <button class="search-btn" onclick="updateinfo()"><i class="fas fa-search"></i></button>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="current-weather">
+                <div class="location-info">
+                    <h2>New York, NY</h2>
+                    <p class="date">Wednesday, June 25, 2025</p>
+                    <p class="weather-desc">Partly Cloudy</p>
+                </div>
+                <div class="weather-display">
+                    <div class="temperature">
+                        <span class="temp-value">72</span>
+                        <span class="temp-unit">°F</span>
+                    </div>
+                    <div class="weather-icon">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                </div>
+                <div class="weather-details">
+                    <div class="detail-item">
+                        <i class="fas fa-wind"></i>
+                        <span>8 mph</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-tint"></i>
+                        <span>65%</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-eye"></i>
+                        <span>6 mi</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast-section">
+                <h3>5-Day Forecast</h3>
+                <div class="forecast-container">
+                    <div class="forecast-card">
+                        <p class="day">Thu</p>
+                        <i class="fas fa-sun"></i>
+                        <div class="temps">
+                            <span class="high">75°</span>
+                            <span class="low">62°</span>
+                        </div>
+                    </div>
+                    <div class="forecast-card">
+                        <p class="day">Fri</p>
+                        <i class="fas fa-cloud-sun"></i>
+                        <div class="temps">
+                            <span class="high">74°</span>
+                            <span class="low">61°</span>
+                        </div>
+                    </div>
+                    <div class="forecast-card">
+                        <p class="day">Sat</p>
+                        <i class="fas fa-cloud-rain"></i>
+                        <div class="temps">
+                            <span class="high">68°</span>
+                            <span class="low">58°</span>
+                        </div>
+                    </div>
+                    <div class="forecast-card">
+                        <p class="day">Sun</p>
+                        <i class="fas fa-sun"></i>
+                        <div class="temps">
+                            <span class="high">77°</span>
+                            <span class="low">64°</span>
+                        </div>
+                    </div>
+                    <div class="forecast-card">
+                        <p class="day">Mon</p>
+                        <i class="fas fa-cloud-sun"></i>
+                        <div class="temps">
+                            <span class="high">76°</span>
+                            <span class="low">63°</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hourly-section">
+                <h3>Hourly Forecast</h3>
+                <div class="hourly-container">
+                    <div class="hourly-card">
+                        <p class="time">Now</p>
+                        <i class="fas fa-cloud-sun"></i>
+                        <p class="temp">72°</p>
+                    </div>
+                    <div class="hourly-card">
+                        <p class="time">1 PM</p>
+                        <i class="fas fa-cloud-sun"></i>
+                        <p class="temp">74°</p>
+                    </div>
+                    <div class="hourly-card">
+                        <p class="time">2 PM</p>
+                        <i class="fas fa-sun"></i>
+                        <p class="temp">76°</p>
+                    </div>
+                    <div class="hourly-card">
+                        <p class="time">3 PM</p>
+                        <i class="fas fa-sun"></i>
+                        <p class="temp">77°</p>
+                    </div>
+                    <div class="hourly-card">
+                        <p class="time">4 PM</p>
+                        <i class="fas fa-sun"></i>
+                        <p class="temp">76°</p>
+                    </div>
+                    <div class="hourly-card">
+                        <p class="time">5 PM</p>
+                        <i class="fas fa-cloud-sun"></i>
+                        <p class="temp">75°</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>© 2025 WeatherSphere. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
